@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+	<title>Your JigsAudio Device</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class = "row">
+			<div class="jumbotron">
+				<h1 class="display-4">Your JigsAudio Device</h1>
+				<p class="lead">You've connected to your JigsAudio device. From here, you're able to view instructions on how to use the device, listen to and download the audio, as well as check the device's status.</p>
+				<hr class="my-4">
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">JigsAudio</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-4">
+				<h2>Last recording:</h2>
+				<p>
+					Some content here
+				</p>
+			</div>
+
+			<div class="col-sm-4">
+				<h2>Number of Recordings:</h2>
+				<p>
+					Some content here
+				</p>
+			</div>
+
+			<div class="col-sm-4">
+				<h2>Download All</h2>
+				<p>
+					Some content here
+				</p>
+
+				<button type="button" class="btn btn-primary">Download All Audio</button>
+
+			</div>
+		</div>
+
+<hr class="my-5">
+
+		<div class="row">
+
+			{% for file in audio_files %}
+				<div class="mt-3 col-md-4 hidden-xs">
+					<h5>Clip Name
+						<small>Creation DateTime</small>
+					</h5>
+
+					<audio controls="">
+						<source src="{{ audio_files }}>
+						type="audio/ogg">
+					</audio>
+				</div>
+			{% endfor %}
+
+
+		
+		</div>
+	</div>
+
+						<!-- Optional JavaScript -->
+						<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+					</body>
+					</html>

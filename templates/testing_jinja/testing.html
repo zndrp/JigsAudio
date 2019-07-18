@@ -1,0 +1,12 @@
+			{% for file in audio_files %}
+				<div class="mt-3 col-md-4 hidden-xs">
+					<h5>Clip Name
+						<small>Creation DateTime</small>
+					</h5>
+
+					<audio controls="">
+						<source src="{{ audio_files }}>
+						type="audio/ogg">
+					</audio>
+				</div>
+			{% endfor %}

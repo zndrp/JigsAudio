@@ -1,0 +1,9 @@
+[Unit]
+Description=Jigsaudio python script runner
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/JigsAudio/main.py
+
+[Install]
+WantedBy=multi-user.target
