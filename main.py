@@ -165,10 +165,12 @@ def light(colour, on_off):
 		GPIO.output(23,GPIO.LOW)
 
 	if colour == "both" and on_off == "on":
-		GPIO.output(23,GPIO.LOW)
+		GPIO.output(23,GPIO.HIGH)
+		GPIO.output(18,GPIO.HIGH)
 
 	if colour == "both" and on_off == "off":
 		GPIO.output(23,GPIO.LOW)
+		GPIO.output(18,GPIO.LOW)
 
 	else:
 		return
