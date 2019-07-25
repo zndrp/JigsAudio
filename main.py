@@ -82,10 +82,6 @@ def captureAudio(audio_path):
 			stop = True
 
  		if stop:
-#			print 'hejsan, we got i to kill'
-#			p.send_signal(signal)
-#			s.killpg(os.getpgid(p.pid), signal.SIGTERM)	
-#			p = None	
 			os.system("killall arecord")
 			break
 
@@ -284,7 +280,7 @@ def main():
 	return True
 
 def record(puz_id):
-	
+	light("both", "off")
 	file = AUDIODIR + puz_id
 	print puz_id
 	print file
