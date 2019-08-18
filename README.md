@@ -7,7 +7,7 @@ This project takes an RFID Tagged Puzzle piece and associates it with an audio c
 ## What's inside?:
 * **caseDesigns:** This folder contains the case designs for the different versions of JigsAudio (.ai and .svg). All of the cases are designed for laser cut 3mm material - usually 3mm perspex but you can what you'd like. The case requires M3 screws and nuts.
 
-* **documentation:** This folder contains documentation on JigsAudio. This is a work in progesss. At the moment it contains the circuit schematic (showing where the leads for the buttons and switches go). 
+* **[documentation](../documentation):** This folder contains documentation on JigsAudio. This is a work in progesss. At the moment it contains the circuit schematic (showing where the leads for the buttons and switches go). 
 
 * **jigsawDesigns:** This folder contains the desgins for the different jigsaw designs. These are easily created (as long as the peices are large enough for RFID tags).
 
@@ -32,7 +32,7 @@ The JigsAudio device is made from a number of off the shelf components, some of 
 * *[USB Microphone](https://www.amazon.co.uk/Kinobo-Microphone-Desktops-Dictation-Software/dp/B00NSOWWIS/ref=sr_1_9?ie=UTF8&qid=1478520299&sr=8-9&keywords=usb+microphone):* A generic USB microphone is used that is attached to the top case with cable ties. A cheap mic is used. Note: the sound quality playing from the RPi isn’t particually good – there is no dedicated sound card within the device. A USB sound quality can be added to JigsAudio if the audio quality is important
 * *WiFI Adaptor:* (if not built into the RPi): Allows for the website to be served from the device, and to listen to and delete recordings, and verify the device is working.
 
-# Notes
+# Some Final Things:
 To have the JigsAudio Python script run at startup, you need to change the .bashrc file. This file can be found by typing: `sudo nano /home/pi/.bashrc` (You'll need to enter your password). When you find the file, add the following lines to the end of the file:
 
 ```
