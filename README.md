@@ -35,23 +35,31 @@ The JigsAudio device is made from a number of off the shelf components, some of 
 # Notes
 To have the JigsAudio Python script run at startup, you need to change the .bashrc file. This file can be found by typing: `sudo nano /home/pi/.bashrc` (You'll need to enter your password). When you find the file, add the following lines to the end of the file:
 
-```sudo nano /home/pi/.bashrc
+```
+sudo nano /home/pi/.bashrc
 echo Running at boot
-sudo python /home/pi/JigsAudio/main.py ```
+sudo python /home/pi/JigsAudio/main.py 
+```
     
 Exit ('ctrl + x') and reboot ('sudo reboot now')
 
 There's a few other things to do, such as set the volume of the headphones: 
 
 Turn off Desktop Boot & Force Headphones
-```sudo raspi-config```
-```Boot options > Desktop/CLI > Console Autologin```
-```Advanced > Force Headphones
+```
+sudo raspi-config
+Boot options > Desktop/CLI > Console Autologin
+Advanced > Force Headphones
+```
 
-```sudo Alsamixer```
+```
+sudo Alsamixer
+```
 Turn volume up to full
 
 Restart the RPi
-```sudo reboot now```
+```
+sudo reboot now
+```
 
 ..it should not start up running JigsAudio.
