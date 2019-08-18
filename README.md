@@ -7,7 +7,7 @@ This project takes an RFID Tagged Puzzle piece and associates it with an audio c
 ## What's inside?:
 * **caseDesigns:** This folder contains the case designs for the different versions of JigsAudio (.ai and .svg). All of the cases are designed for laser cut 3mm material - usually 3mm perspex but you can what you'd like. The case requires M3 screws and nuts.
 
-* **[documentation](../documentation):** This folder contains documentation on JigsAudio. This is a work in progesss. At the moment it contains the circuit schematic (showing where the leads for the buttons and switches go). 
+* **documentation:** This folder contains documentation on JigsAudio. This is a work in progesss. At the moment it contains the circuit schematic (showing where the leads for the buttons and switches go). 
 
 * **jigsawDesigns:** This folder contains the desgins for the different jigsaw designs. These are easily created (as long as the peices are large enough for RFID tags).
 
@@ -41,7 +41,7 @@ echo Running at boot
 sudo python /home/pi/JigsAudio/main.py 
 ```
     
-Exit ('ctrl + x') and reboot ('sudo reboot now')
+Exit `'ctrl + x'` and reboot `sudo reboot now'`
 
 There's a few other things to do, such as set the volume of the headphones: 
 
@@ -56,7 +56,7 @@ Advanced > Force Headphones
 ```
 sudo Alsamixer
 ```
-Turn volume up to full
+Turn volume up to full (using the arrow keys)
 
 Restart the RPi
 ```
