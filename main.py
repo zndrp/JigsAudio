@@ -51,7 +51,7 @@ def init():
 
 def captureAudio(audio_path):
 	# -D plughw:CARD=Device,DEV=0
-	p = subprocess.Popen("arecord -f S16_LE -r 48000 " + audio_path, shell=True)
+	p = subprocess.Popen("arecord -D plughw:1,0 -f S16_LE -r 48000 " + audio_path, shell=True)
 	
 	print "Recording..."
 	recordStart = time.time()
@@ -82,10 +82,6 @@ def captureAudio(audio_path):
 			stop = True
 
  		if stop:
-#			print 'hejsan, we got i to kill'
-#			p.send_signal(signal)
-#			s.killpg(os.getpgid(p.pid), signal.SIGTERM)	
-#			p = None	
 			os.system("killall arecord")
 			break
 
@@ -278,14 +274,15 @@ def main():
 
 		if time_since_scan > 10:
 			print "Button Not Pressed - Timed Out"
-			light("red","off")
+			light("both","off")
 			break
 	
 	return True
 
 def record(puz_id):
-	
+	light("both", "off")
 	file = AUDIODIR + puz_id
+	print puz_id
 	print file
 	captureAudio(file)
 
