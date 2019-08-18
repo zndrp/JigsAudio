@@ -4,7 +4,7 @@
 
 This project takes an RFID Tagged Puzzle piece and associates it with an audio clip, stored on a Raspberry Pi. I'm currently  writing instructions on how to make your own JigsAudio device, but in the meantime, please do email me: alexander.wilson@ncl.ac.uk
 
-If you're interesting in how JigsAudio was used, you can read about it in this [paper](https://journals.sagepub.com/doi/full/10.1177/2399808319831290)
+If you're interesting in how JigsAudio was used, you can read about it in this [paper](https://journals.sagepub.com/doi/full/10.1177/2399808319831290).
 
 ## What's inside?:
 * **caseDesigns:** This folder contains the case designs for the different versions of JigsAudio (.ai and .svg). All of the cases are designed for laser cut 3mm material - usually 3mm perspex but you can what you'd like. The case requires M3 screws and nuts.
