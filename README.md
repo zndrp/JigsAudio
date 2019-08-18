@@ -1,4 +1,4 @@
-![Image of JigsAudio] (DSC_3127.jpg)
+![Image of JigsAudio](DSC_3127.jpg)
 
 # A Few Details:
 
