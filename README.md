@@ -48,9 +48,10 @@ There's a few other things to do, such as set the volume of the headphones:
 Turn off Desktop Boot & Force Headphones
 ```
 sudo raspi-config
+```
 Boot options > Desktop/CLI > Console Autologin
 Advanced > Force Headphones
-```
+
 
 ```
 sudo Alsamixer
