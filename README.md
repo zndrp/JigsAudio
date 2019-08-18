@@ -33,7 +33,7 @@ The JigsAudio device is made from a number of off the shelf components, some of 
 * *WiFI Adaptor:* (if not built into the RPi): Allows for the website to be served from the device, and to listen to and delete recordings, and verify the device is working.
 
 # Notes
-To have the JigsAudio Python script run at startup, you need to change the .bashrc file. This file can be found by typing: 'sudo nano /home/pi/.bashrc' (You'll need to enter your password). When you find the file, add the following lines to the end of the file:
+To have the JigsAudio Python script run at startup, you need to change the .bashrc file. This file can be found by typing: `sudo nano /home/pi/.bashrc` (You'll need to enter your password). When you find the file, add the following lines to the end of the file:
 
 ```sudo nano /home/pi/.bashrc
 echo Running at boot
@@ -45,8 +45,8 @@ There's a few other things to do, such as set the volume of the headphones:
 
 Turn off Desktop Boot & Force Headphones
 ```sudo raspi-config```
-Boot options > Desktop/CLI > Console Autologin
-Advanced > Force Headphones
+```Boot options > Desktop/CLI > Console Autologin```
+```Advanced > Force Headphones
 
 ```sudo Alsamixer```
 Turn volume up to full
@@ -54,4 +54,4 @@ Turn volume up to full
 Restart the RPi
 ```sudo reboot now```
 
-..it should not start up running JigsAudio
+..it should not start up running JigsAudio.
