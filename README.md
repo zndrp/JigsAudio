@@ -41,7 +41,7 @@ echo Running at boot
 sudo python /home/pi/JigsAudio/main.py 
 ```
     
-Exit `'ctrl + x'` and reboot `sudo reboot now'`
+Exit `ctrl + x` and reboot `sudo reboot now`
 
 There's a few other things to do, such as set the volume of the headphones: 
 
