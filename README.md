@@ -65,4 +65,4 @@ Restart the RPi
 sudo reboot now
 ```
 
-..it should not start up running JigsAudio.
+..it should now start up running JigsAudio.
