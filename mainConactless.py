@@ -262,7 +262,7 @@ def main():
 
 		tag_id = None
 
-		with RfidReader("My RFID Device", verbose=True) as rfid:
+		with RfidReader("Sycreader RFID Technology Co., Ltd SYC ID&IC USB Reader", verbose=True) as rfid:
 			while True:
 				card = rfid.read()
 				if card is not None:
