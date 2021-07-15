@@ -256,19 +256,32 @@ def main():
 		print "ready to play"
 		light("green", "on")
 
+	tag_id = None
+
 	while True:
 		green_button = GPIO.input(27)
 		red_button = GPIO.input(17)
 
-		tag_id = None
+#		tag_id = None
 
-		with RfidReader("Sycreader RFID Technology Co., Ltd SYC ID&IC USB Reader", verbose=True) as rfid:
+		with RfidReader("Sycreader RFID Technology Co., Ltd SYC ID&IC USB Reader", verbose=False) as rfid:
 			while True:
 				card = rfid.read()
 				if card is not None:
 					print("CARD: " + card)
+					break
 				tag_id = card
-			time.sleep(0.050)
+				print "escaped card read loop"
+
+				time.sleep(0.050)
+
+				if tag_id is not None:
+					print "checking if not blank to break"
+					break
+
+			if tag_id is not None:
+				break
+
 
 		if tag_id is not None:
 			print "contactless record protocol initiated"
