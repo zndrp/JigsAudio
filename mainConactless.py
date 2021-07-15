@@ -266,7 +266,7 @@ def main():
 			while True:
 				card = rfid.read()
 				if card is not None:
-				print("CARD: " + card)
+					print("CARD: " + card)
 				tag_id = card
 			time.sleep(0.050)
 
