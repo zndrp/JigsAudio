@@ -270,7 +270,7 @@ def main():
 				tag_id = card
 			time.sleep(0.050)
 
-		if not tag_id = None
+		if tag_id is not None
 			print "contactless record protocol initiated"
 			print puz_file
 			record(puz_file)
